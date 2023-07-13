@@ -37,22 +37,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="리니로그" />
+<meta property="og:title" content="Customize the Favicon" />
+<meta name="author" content="Cotes Chung" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons." />
+<meta property="og:description" content="The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons." />
+<link rel="canonical" href="http://localhost:4000/posts/customize-the-favicon/" />
+<meta property="og:url" content="http://localhost:4000/posts/customize-the-favicon/" />
 <meta property="og:site_name" content="리니로그" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-11T01:34:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="리니로그" />
+<meta property="twitter:title" content="Customize the Favicon" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"리니로그","name":"김예린","sameAs":["https://github.com/1027-R"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung"},"dateModified":"2019-08-11T01:34:00+09:00","datePublished":"2019-08-11T01:34:00+09:00","description":"The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.","headline":"Customize the Favicon","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/customize-the-favicon/"},"url":"http://localhost:4000/posts/customize-the-favicon/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>리니로그
+  <title>Customize the Favicon | 리니로그
   </title>
 
   <!--
@@ -106,7 +108,12 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+  
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -280,7 +287,7 @@
   <ul class="w-100">
 
     <!-- home -->
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HOME</span>
@@ -378,8 +385,33 @@
     
 
     
-      <!-- index page -->
-      <span>Home</span>
+
+      
+
+        
+          <span>
+            <a href="/">
+              Home
+            </a>
+          </span>
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          
+            <span>Customize the Favicon</span>
+          
+
+        
+
+      
 
     
 
@@ -388,7 +420,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      리니로그
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -427,325 +459,181 @@
     
       
       
-        
-
-
-
-
-
-
-
-
-<!-- Get pinned posts -->
-
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-<div id="post-list">
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/getting-started/">Getting Started</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Prerequisites
-
-Follow the instructions in the Jekyll Docs to complete the installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also required to be installed.
-
-Installation
-
-Crea...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
         <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
+  Refactor the HTML structure.
 -->
 
-<em class="timeago"
-    data-ts="1565355300"
-    
-      data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll"
-    
-    
-      data-capitalize="true"
-    >
-  2019-08-09
-</em>
 
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1081 words">
-  <em>6 min</em></span>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Blogging,
-            Tutorial
-          </span>
-        
-      </div>
-
-      
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>Pinned</span>
-      </div>
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/write-a-new-post/">Writing a New Post</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        This post will guide you how to write a post on Chirpy theme. Even if you have previous experience with Jekyll, this article is worth reading, because many features require specific variables to be...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
 -->
 
-<em class="timeago"
-    data-ts="1565244600"
-    
-      data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll"
-    
-    
-      data-capitalize="true"
-    >
-  2019-08-08
-</em>
 
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1293 words">
-  <em>7 min</em></span>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Blogging,
-            Tutorial
-          </span>
-        
-      </div>
-
-      
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>Pinned</span>
-      </div>
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/enable-google-pv/">Enable Google Page Views</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv.* empty unless you have ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
 -->
 
-<em class="timeago"
-    data-ts="1609716720"
+
+
+<!-- Add attribute 'hide-bullet' to the checkbox list -->
+
+
+
+<!-- images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
     
-      data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll"
     
+
     
-      data-capitalize="true"
-    >
-  2021-01-04
-</em>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1338 words">
-  <em>7 min</em></span>
-
-
-        <!-- categories -->
+      
         
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Blogging,
-            Tutorial
-          </span>
         
-      </div>
+      
+
+      
+      
+
+      
+      
+      
 
       
 
-    </div> <!-- .post-meta -->
+    
+      
 
-  </div> <!-- .post-review -->
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/customize-the-favicon/">Customize the Favicon</a>
-    </h1>
 
-    <div class="post-content">
-      <p>
+<!-- Wrap prompt element of blockquote with the <div> tag -->
+
+
+
+
+
+
+
+  
+  
+
+  
+
+    
+      
+      
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+        
         
 
+    
+
+    
+    
+
+    
+
+  
+
+  
+
+
+
+<!-- return -->
 
 
 
 
-        The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons...
-      </p>
-    </div>
 
-    <div class="post-meta text-muted d-flex">
 
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
+
+<h1 data-toc-skip>Customize the Favicon</h1>
+
+<div class="post-meta text-muted">
+
+  <!-- author -->
+  <div>
+    
+    
+
+    
+
+    By
+    <em>
+      
+        <a href="https://github.com/cotes2020">Cotes Chung</a>
+      
+    </em>
+  </div>
+
+  <div class="d-flex">
+    <div>
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/timeago.js
@@ -756,16 +644,17 @@ Crea...
     
       data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll"
     
-    
-      data-capitalize="true"
     >
   2019-08-11
 </em>
 
+      </span>
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
+      <!-- lastmod date -->
+      
+
+      <!-- read time -->
+      <!--
   Calculate the post's reading time, and display the word count in tooltip
  -->
 
@@ -785,177 +674,152 @@ Crea...
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
   title="212 words">
-  <em>1 min</em></span>
+  <em>1 min</em> read</span>
 
 
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Blogging,
-            Tutorial
-          </span>
-        
-      </div>
-
+      <!-- page views -->
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/text-and-typography/">Text and Typography</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
-
-Titles
-
-
-H1 - heading
-
-H2 - heading
-
-H3 - h...
-      </p>
     </div>
 
-    <div class="post-meta text-muted d-flex">
+  </div> <!-- .d-flex -->
 
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
--->
+</div> <!-- .post-meta -->
 
-<em class="timeago"
-    data-ts="1565235180"
+<div class="post-content">
+  <p>The <a href="https://www.favicon-generator.org/about/">favicons</a> of <a href="https://github.com/cotes2020/jekyll-theme-chirpy/"><strong>Chirpy</strong></a> are placed in the directory <code class="language-plaintext filepath highlighter-rouge">assets/img/favicons/</code>. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.</p>
+
+<h2 id="generate-the-favicon"><span class="mr-2">Generate the favicon</span><a href="#generate-the-favicon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<p>Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool <a href="https://realfavicongenerator.net/"><strong>Real Favicon Generator</strong></a> and click the button <kbd>Select your Favicon image</kbd> to upload your image file.</p>
+
+<p>In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button <kbd>Generate your Favicons and HTML code</kbd> to generate the favicon.</p>
+
+<h2 id="download--replace"><span class="mr-2">Download &amp; Replace</span><a href="#download--replace" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<p>Download the generated package, unzip and delete the following two from the extracted files:</p>
+
+<ul>
+  <li><code class="language-plaintext filepath highlighter-rouge">browserconfig.xml</code></li>
+  <li><code class="language-plaintext filepath highlighter-rouge">site.webmanifest</code></li>
+</ul>
+
+<p>And then copy the remaining image files (<code class="language-plaintext filepath highlighter-rouge">.PNG</code> and <code class="language-plaintext filepath highlighter-rouge">.ICO</code>) to cover the original files in the directory <code class="language-plaintext filepath highlighter-rouge">assets/img/favicons/</code> of your Jekyll site. If your Jekyll site doesn’t have this directory yet, just create one.</p>
+
+<p>The following table will help you understand the changes to the favicon files:</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>File(s)</th>
+      <th style="text-align: center">From Online Tool</th>
+      <th style="text-align: center">From Chirpy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*.PNG</code></td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*.ICO</code></td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<blockquote class="prompt-info"><div>
+  <p>✓ means keep, ✗ means delete.</p>
+</div></blockquote>
+
+<p>The next time you build the site, the favicon will be replaced with a customized edition.</p>
+
+</div>
+
+<div class="post-tail-wrapper text-muted">
+
+  <!-- categories -->
+  
+  <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw mr-1"></i>
     
-      data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll"
-    
-    
-      data-capitalize="true"
-    >
-  2019-08-08
-</em>
+      <a href='/categories/blogging/'>Blogging</a>,
+      <a href='/categories/tutorial/'>Tutorial</a>
+  </div>
+  
 
+  <!-- tags -->
+  
+  <div class="post-tags">
+    <i class="fa fa-tags fa-fw mr-1"></i>
+      
+      <a href="/tags/favicon/"
+          class="post-tag no-text-decoration" >favicon</a>
+      
+  </div>
+  
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="635 words">
-  <em>3 min</em></span>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Blogging,
-            Demo
-          </span>
-        
-      </div>
+  <div class="post-tail-bottom
+    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+    <div class="license-wrapper">
 
       
 
-    </div> <!-- .post-meta -->
+        
 
-  </div> <!-- .post-review -->
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
 
+      
+    </div>
 
-
-</div> <!-- #post-list -->
-
-
-  <!--
-  The paginator for post list on HomgPage.
+    <!--
+ Post sharing snippet
 -->
 
-<ul class="pagination align-items-center mt-4 mb-0 pl-lg-2">
-  <!-- left arrow -->
-  
-
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="previous-page">
-      <i class="fas fa-angle-left"></i>
-    </a>
-  </li>
-
-  <!-- page numbers -->
-  
-  
-
-  
-
-    
-    
-    
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
     
 
     
-
+      
+        <a href="https://twitter.com/intent/tweet?text=Customize the Favicon - 리니로그&amp;url=http://localhost:4000/posts/customize-the-favicon/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
     
-      <!-- show number -->
-      <li class="page-item  active">
-        <a class="page-link btn-box-shadow" href="/">1</a>
-      </li>
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Customize the Favicon - 리니로그&amp;u=http://localhost:4000/posts/customize-the-favicon/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://t.me/share/url?url=http://localhost:4000/posts/customize-the-favicon/&amp;text=Customize the Favicon - 리니로그" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
     
 
-  
+    <i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title="Copy link"
+        data-title-succeed="Link copied successfully!">
+    </i>
 
-  <!-- mobile pagination -->
-  <li class="page-index align-middle">
-    <span>1</span>
-    <span class="text-muted">/ 1</span>
-  </li>
+  </span>
+</div>
 
-  <!-- right arrow -->
-  
 
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="next-page">
-      <i class="fas fa-angle-right"></i>
-    </a>
-  </li>
+  </div><!-- .post-tail-bottom -->
 
-</ul> <!-- .pagination -->
-
+</div><!-- div.post-tail-wrapper -->
 
 
       
@@ -1193,11 +1057,267 @@ H3 - h...
     </div>
 
     
+      
+      
+
+
+
+<!-- BS-toc.js will be loaded at medium priority -->
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+<div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+  <div class="panel-heading pl-3 pt-2 mb-2">Contents</div>
+  <nav id="toc" data-toggle="toc"></nav>
+</div>
+
+
+    
   </div>
 
 </div>
 
 <!-- tail -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+      
+        
+        <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/write-a-new-post/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+<em class="timeago small"
+    data-ts="1565244600"
+    
+    >
+  2019-08-08
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Writing a New Post</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                This post will guide you how to write a post on Chirpy theme. Even if you have previous experience with Jekyll, this article is worth reading, because many features require specific variables to be...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/getting-started/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+<em class="timeago small"
+    data-ts="1565355300"
+    
+    >
+  2019-08-09
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Getting Started</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Prerequisites
+
+Follow the instructions in the Jekyll Docs to complete the installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also required to be installed.
+
+Installation
+
+Crea...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/enable-google-pv/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+<em class="timeago small"
+    data-ts="1609716720"
+    
+    >
+  2021-01-04
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Enable Google Page Views</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv.* empty unless you have ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+      
+        
+        <!--
+  Navigation buttons at the bottom of the post.
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/getting-started/" class="btn btn-outline-primary"
+    prompt="Older">
+    <p>Getting Started</p>
+  </a>
+  
+
+  
+  <a href="/posts/enable-google-pv/" class="btn btn-outline-primary"
+    prompt="Newer">
+    <p>Enable Google Page Views</p>
+  </a>
+  
+
+</div>
+
+      
+        
+        <!--  The comments switcher -->
+
+
+      
+    </div>
+  </div>
+</div> <!-- .row -->
 
 
 
@@ -1512,6 +1632,52 @@ SimpleJekyllSearch({
 <!-- layout specified -->
 
 
+  
+
+
+
+  <!-- image lazy-loading & popup & clipboard -->
+  
+
+  
+
+
+
+
+
+
+
+  
+    
+
+    
+
+  
+
+
+
+  
+    
+
+    
+
+  
+
+
+
+  
+    
+
+    
+
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+
+
 
 
 
@@ -1575,7 +1741,7 @@ SimpleJekyllSearch({
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
