@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>리니로그</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-07-15T16:32:50+09:00</updated>
+  <updated>2023-07-23T01:27:30+09:00</updated>
   <author>
     <name>김예린</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,82 @@
 
   
   <entry>
-    <title>HTML</title>
-    <link href="http://localhost:4000/posts/html/" rel="alternate" type="text/html" title="HTML" />
+    <title>HTML]HTML Tag</title>
+    <link href="http://localhost:4000/posts/htmltag/" rel="alternate" type="text/html" title="HTML]HTML Tag" />
+    <published>2023-07-15T15:10:00+09:00</published>
+  
+    <updated>2023-07-15T15:10:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/htmltag/</id>
+    <content src="http://localhost:4000/posts/htmltag/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Frontend" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      HTML 텍스트 작성
+
+hn 태그
+
+  제목이나 주제를 나타내는 텍스트를 표현할 때 사용
+  h1부터 h6까지 존재 : h는 head, n에 들어가는 숫자는 중요도 표시
+  h1이 가장 중요하며 h6이 상대적으로 가장 덜 중요
+  중요도가 높을수록 글자가 가장 크고 굵고, 중요도가 낮을수록 크기가 작고 가늘어짐
+  hn 태그는 중간 숫자를 건너뛰지 말고 단계적으로 사용해야함 : 검색엔진에서 검색 시 순차적으로 검색하기 때문
+
+
+&amp;lt;hn&amp;gt;제목&amp;lt;/hn&amp;gt;
+
+
+p 태그
+
+  본문의 문단 작성 시 사용
+
+
+&amp;lt;p&amp;gt;문단내용&amp;lt;/p&amp;gt;
+
+
+br 태그
+
+  문단에서 줄 바꿈 시 사용
+
+
+&amp;lt;br&amp;gt;다음 내용
+
+
+blockquote 태그
+
+  출처에서 인용한 문단 단위의 텍스...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>HTML]HTML 기본</title>
+    <link href="http://localhost:4000/posts/htmldefault/" rel="alternate" type="text/html" title="HTML]HTML 기본" />
     <published>2023-07-14T15:10:00+09:00</published>
   
     <updated>2023-07-14T15:10:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/html/</id>
-    <content src="http://localhost:4000/posts/html/" />
+    <id>http://localhost:4000/posts/htmldefault/</id>
+    <content src="http://localhost:4000/posts/htmldefault/" />
     <author>
       <name>김예린</name>
     </author>
@@ -51,14 +119,19 @@
       HTML 개요
 
 HTML이란?
-HyperText Markup Language의 약자
-웹 페이지는 HTML 문서라고도 불리며, HTML 태그들로 구성
-각각의 HTML 태그는 웹 페이지의 디자인이나 기능을 결정하는데 사용
+
+  HyperText Markup Language의 약자
+  웹 페이지는 HTML 문서라고도 불리며, HTML 태그들로 구성
+  각각의 HTML 태그는 웹 페이지의 디자인이나 기능을 결정하는데 사용
+
 
 HTML 기본 구성 요소
 
 태그
-다양한 구성 요소(텍스트, 이미지, 버튼 등)를 정의
+
+  다양한 구성 요소(텍스트, 이미지, 버튼 등)를 정의
+
+
 - &amp;lt;!DOCTYPE html&amp;gt;
     - DTD(Documen Type Definition)
     - HTML의 처음 시작은 항상 해당 구문으로 시작
@@ -66,7 +139,7 @@ HTML 기본 구성 요소
 - &amp;lt;html&amp;gt;
     - MTML 문서의 루트 요소(경로)를 정의
     - 웹 문서의 시작과 끝을 나타내는 태그
-    - 모든 태그는 &amp;lt;html&amp;gt;안에 ...
+    - 모든 태그는 &amp;l...
     </summary>
   
 
