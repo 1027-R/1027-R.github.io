@@ -594,6 +594,42 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -610,6 +646,210 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
       
 
       
@@ -1091,8 +1331,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="5518 words">
-  <em>30 min</em> read</span>
+  title="7218 words">
+  <em>40 min</em> read</span>
 
 
       <!-- page views -->
@@ -2681,6 +2921,511 @@
 </table></div>
 
 <hr />
+
+<h3 id="scope-속성"><span class="mr-2">scope 속성</span><a href="#scope-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>순전히 웹 접근성 향상을 목적으로 사용</li>
+  <li>제목을 나타내는 셀의 범위 지정 : th 태그(표 제목)에서만 사용 가능</li>
+  <li>속성값 : col(세로), row(가로), ~group(병합 셀)
+    <ul>
+      <li>제목이 colspan이나 rowspan으로 병합된 셀 : colgroup, rowgroup 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>
+	<span class="nt">&lt;tr&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>구분<span class="nt">&lt;/th&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>중간고사<span class="nt">&lt;/th&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>기말고사<span class="nt">&lt;/th&gt;</span>
+	<span class="nt">&lt;/tr&gt;</span>
+	<span class="nt">&lt;tr&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>전공<span class="nt">&lt;/th&gt;</span>
+		<span class="nt">&lt;td&gt;</span>A+<span class="nt">&lt;/td&gt;</span>
+		<span class="nt">&lt;td&gt;</span>B+<span class="nt">&lt;/td&gt;</span>
+	<span class="nt">&lt;/tr&gt;</span>
+	<span class="nt">&lt;tr&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>교양<span class="nt">&lt;/th&gt;</span>
+		<span class="nt">&lt;td&gt;</span>C-<span class="nt">&lt;/td&gt;</span>
+		<span class="nt">&lt;td&gt;</span>B<span class="nt">&lt;/td&gt;</span>
+	<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th scope="col">구분</th>
+		<th scope="col">중간고사</th>
+		<th scope="col">기말고사</th>
+	</tr>
+	<tr>
+		<th scope="row">전공</th>
+		<td>A+</td>
+		<td>B+</td>
+	</tr>
+	<tr>
+		<th scope="row">교양</th>
+		<td>C-</td>
+		<td>B</td>
+	</tr>
+</table></div>
+
+<hr />
+
+<h2 id="멀티미디어-설정하기"><span class="mr-2">멀티미디어 설정하기</span><a href="#멀티미디어-설정하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<h3 id="audio-태그"><span class="mr-2">audio 태그</span><a href="#audio-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>audio 태그는 항상 src 속성과 함께 사용</li>
+  <li>src 속성값 : 삽입하려고 하는 오디오 파일의 경로</li>
+  <li>controls 속성 : 오디오 컨트롤 패널이 웹 브라우저에 노출되도록 설정</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"오디오 파일 경로"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<audio src="오디오 파일 경로" controls=""></audio>
+
+<hr />
+
+<ul>
+  <li>지원 파일 포맷과 미디어 타입</li>
+</ul>
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th scope="col">웹브라우저</th>
+		<th scope="col">MP3</th>
+		<th scope="col">WAV</th>
+		<th scope="col">OGG</th>
+	</tr>
+	<tr>
+		<th scope="row">인터넷 익스플로러(IE)</th>
+		<td>지원</td>
+		<td>미지원</td>
+		<td>미지원</td>
+	</tr>
+	<tr>
+		<th scope="row">엣지(Edge)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+	<tr>
+		<th scope="row">크롬(Chrome)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+	<tr>
+		<th scope="row">파이어폭스(Firefox)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+	<tr>
+		<th scope="row">사파리(Safari)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>미지원</td>
+	</tr>
+	<tr>
+		<th scope="row">오페라(Opera)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+</table></div>
+
+<ul>
+  <li>오디오 파일 포맷별 미디어 타입</li>
+</ul>
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th scope="col">파일 포맷</th>
+		<th scope="col">미디어 타입</th>
+	</tr>
+	<tr>
+		<td>MP3</td>
+		<td>audio/mpeg</td>
+	</tr>
+	<tr>
+		<td>WAV</td>
+		<td>audio/wav</td>
+	</tr>
+	<tr>
+		<td>OGG</td>
+		<td>audio/ogg</td>
+	</tr>
+</table></div>
+
+<h3 id="video-태그"><span class="mr-2">video 태그</span><a href="#video-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>video 태그는 항상 src 속성과 함께 사용</li>
+  <li>src 속성값 : 삽입하려고 하는 비디오 파일의 경로</li>
+  <li>controls 속성 : 비디오 컨트롤 패널이 웹 브라우저에 노출되도록 설정</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"비디오 경로"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<video src="비디오 경로" controls=""></video>
+
+<hr />
+
+<ul>
+  <li>웹 브라우저별 지원 비디오 파일 포맷</li>
+</ul>
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th scope="col">웹브라우저</th>
+		<th scope="col">MP4</th>
+		<th scope="col">WebM</th>
+		<th scope="col">Ogg</th>
+	</tr>
+	<tr>
+		<th scope="row">인터넷 익스플로러(IE)</th>
+		<td>지원</td>
+		<td>미지원</td>
+		<td>미지원</td>
+	</tr>
+	<tr>
+		<th scope="row">엣지(Edge)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+	<tr>
+		<th scope="row">크롬(Chrome)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+	<tr>
+		<th scope="row">파이어폭스(Firefox)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+	<tr>
+		<th scope="row">사파리(Safari)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>미지원</td>
+	</tr>
+	<tr>
+		<th scope="row">오페라(Opera)</th>
+		<td>지원</td>
+		<td>지원</td>
+		<td>지원</td>
+	</tr>
+</table></div>
+
+<ul>
+  <li>비디오 파일 포맷별 미디어 타입</li>
+</ul>
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th scope="col">포맷</th>
+		<th scope="col">미디어 타입</th>
+	</tr>
+	<tr>
+		<td>MP4</td>
+		<td>video/mp4</td>
+	</tr>
+	<tr>
+		<td>WebM</td>
+		<td>video/webm</td>
+	</tr>
+	<tr>
+		<td>Ogg</td>
+		<td>video/ogg</td>
+	</tr>
+</table></div>
+
+<h3 id="source-태그"><span class="mr-2">source 태그</span><a href="#source-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>audio 태그와 video 태그에서 리소스(파일)의 경로와 미디어 타입 명시에 사용</li>
+  <li>멀티미디어(audio, video) 태그 사용 시 필수는 아님</li>
+  <li>원하는 포맷을 우선 지원하고 어쩔 수 없는 경우 다른 포맷을 지원하도록 할 때 유용 : 웹 접근성 향상</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"파일 경로"</span> <span class="na">type=</span><span class="s">"audio/wav"</span><span class="nt">&gt;</span> // wav파일 우선
+	<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"파일 경로"</span> <span class="na">type=</span><span class="s">"audio/mp3"</span><span class="nt">&gt;</span> // mp3파일 차선
+	지원하지 않는 웹 브라우저입니다. // 위 포맷 모두 지원 안 될 경우 사용자에게 노출될 텍스트
+<span class="nt">&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="웹-페이지-구조를-설계하는-시맨틱-태그"><span class="mr-2">웹 페이지 구조를 설계하는 시맨틱 태그</span><a href="#웹-페이지-구조를-설계하는-시맨틱-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<h3 id="header-태그"><span class="mr-2">header 태그</span><a href="#header-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹 페이지의 헤더 영역 구분</li>
+  <li>웹 사이트의 최상단이나 좌측에 위치</li>
+  <li>로고, 검색, 메뉴와 같은 요소 포함</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;header&gt;</span>
+	헤더 구성 요소
+<span class="nt">&lt;/header&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="nav-태그"><span class="mr-2">nav 태그</span><a href="#nav-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹페이지에서 내부의 다른 영역이나 외부를 연결하는 링크 영역 구분</li>
+  <li>보통 헤더 영역에서의 메뉴나 목차와 같은 요소</li>
+  <li>내부나 외부를 연결하는 링크가 전부 nav 태그일 필요는 없음</li>
+  <li>웹 사이트의 주요 탐색 링크 영역만 포함하면 됨</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav&gt;&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="section-태그"><span class="mr-2">section 태그</span><a href="#section-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹 페이지에서 논리적으로 관련 있는 내용 영역 구분 &gt; 보통 내용의 제목을 나타내는 hn 태그 중 하나 포함</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section&gt;&lt;/section&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="article-태그"><span class="mr-2">article 태그</span><a href="#article-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹 페이지에서 독립적인 영역 구분</li>
+  <li>section 태그와 차이점
+    <ul>
+      <li>section 태그 : 웹 페이지 안에서 관련 있는 내용을 구분</li>
+      <li>article 태그 : 어떤 웹 페이지에서든 독립적으로 사용될 수 있는 영역 구분(ex_로그인 영역)</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;article&gt;&lt;/article&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="aside-태그"><span class="mr-2">aside 태그</span><a href="#aside-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹 페이지 안에서 주력 내용이나 독립적인 내용으로 보기 어려워 article 태그나 section 태그로 영역 구분이 안될 때 사용</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;aside&gt;&lt;/aside&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="footer-태그"><span class="mr-2">footer 태그</span><a href="#footer-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹 페이지에서 푸터 영역 구분</li>
+  <li>웹 페이지의 최하단</li>
+  <li>저작권 정보, 연락처, 사이트 맵 등의 요소 포함</li>
+</ul>
+
+<h3 id="main-태그"><span class="mr-2">main 태그</span><a href="#main-태그" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>웹 페이지의 주요 내용 지정 시 사용하는 태그</li>
+  <li>문서에서 반복해서 등장하는 요소를 포함해서는 안됨</li>
+  <li>article, aside, footer, header, nav 태그 하위에 포함할 수 없음</li>
+</ul>
+
+<h2 id="태그-종류에-상관없이-사용하는-글로벌-속성"><span class="mr-2">태그 종류에 상관없이 사용하는 글로벌 속성</span><a href="#태그-종류에-상관없이-사용하는-글로벌-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<ul>
+  <li>태그 종류 상관없이 모든 태그에서 공통으로 사용할 수 있는 속성</li>
+</ul>
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th scope="col">속성</th>
+		<th scope="col">값</th>
+		<th scope="col">설명</th>
+	</tr>
+	<tr>
+		<td>class</td>
+		<td>value</td>
+		<td>요소에 클래스 값 지정. 클래스 값은 CSS에서 클래스 선택자로 활용</td>
+	</tr>
+	<tr>
+		<td>id</td>
+		<td>value</td>
+		<td>요소에 아이디 값 지정. 아이디 값은 CSS에서 아이디 선택자로 활용</td>
+	</tr>
+	<tr>
+		<td>style</td>
+		<td>style</td>
+		<td>요소에 클래스 값 지정. 클래스 값은 CSS에서 클래스 선택자로 활용</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>text</td>
+		<td>요소에 추가 정보 지정<br />마우스를 요소 위에 올리면 툴팁으로 추가 정보 표시<br /> 툴팁은 요소에 마우스 커서를 올렸을 때 추가 설명이 뜨는 말풍선 형태의 그래픽 요소를 말함</td>
+	</tr>
+	<tr>
+		<td>lang</td>
+		<td>language</td>
+		<td>요소에 사용한 텍스트의 언어 정보 지정</td>
+	</tr>
+	<tr>
+		<td>hidden</td>
+		<td>hidden</td>
+		<td>요소를 화면에서 감춤</td>
+	</tr>
+	<tr>
+		<td>data-*</td>
+		<td>value</td>
+		<td>사용자가 임의의 속성을 만들 수 있음</td>
+	</tr>
+</table></div>
+
+<h3 id="class-속성"><span class="mr-2">class 속성</span><a href="#class-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>요소에 클래스명 지정 시 사용
+    <ul>
+      <li>클래스명 : CSS에서 클래스 선택자로 활용. 같은 클래스명은 여러 요소가 중복해서 가질 수 있음</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"red-color"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="id-속성"><span class="mr-2">id 속성</span><a href="#id-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>요소에 아이디 지정 시 사용
+    <ul>
+      <li>아이디 : CSS에서 아이디 선택자로 활용. 중복될 수 없음</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"title"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="style-속성"><span class="mr-2">style 속성</span><a href="#style-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>CSS 코드를 인라인으로 작성할 때 사용</li>
+</ul>
+
+<h3 id="title-속성"><span class="mr-2">title 속성</span><a href="#title-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>요소에 추가 정보를 넣을 때 사용</li>
+  <li>title 속성에 넣은 값은 요소에 마우스를 올리면 툴팁으로 표시</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;&lt;span</span> <span class="na">title=</span><span class="s">"World Wide Web Consortium"</span><span class="nt">&gt;</span>W3C<span class="nt">&lt;/span&gt;</span>는 국제 웹 표준 개발 기구입니다.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<p><span title="World Wide Web Consortium">W3C</span>는 국제 웹 표준 개발 기구입니다.</p>
+
+<hr />
+
+<h3 id="lang-속성"><span class="mr-2">lang 속성</span><a href="#lang-속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>요소에 사용한 텍스트의 언어 코드를 지정할 때 사용</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>Guten Morgen<span class="nt">&lt;/p&gt;</span> // 한국어(ko)로 기본 설정된 문서에서 독일어가 나올때 독일어 언어 코드(de)를 명시하면 웹 접근성을 올릴 수 있음
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="data--속성"><span class="mr-2">data-* 속성</span><a href="#data--속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>사용자 커스텀 속성 생성</li>
+</ul>
+
+<div class="language-md highlighter-rouge"><div class="code-header">
+        <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">data-name=</span><span class="s">"spiderMan"</span> <span class="na">data-hero=</span><span class="s">"true"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span> // data-name과 data-hero 속성 생성
+</pre></td></tr></tbody></table></code></div></div>
 
 </div>
 
