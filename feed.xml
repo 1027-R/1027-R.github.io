@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>리니로그</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-07-24T22:21:32+09:00</updated>
+  <updated>2023-07-31T22:36:26+09:00</updated>
   <author>
     <name>김예린</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,138 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CSS]CSS Selector</title>
+    <link href="http://localhost:4000/posts/cssselector/" rel="alternate" type="text/html" title="CSS]CSS Selector" />
+    <published>2023-07-31T15:10:00+09:00</published>
+  
+    <updated>2023-07-31T15:10:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/cssselector/</id>
+    <content src="http://localhost:4000/posts/cssselector/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Frontend" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      기본 선택자
+
+전체 선택자
+
+  HTML에서 사용할 수 있는 모든 요소를 한 번에 선택자로 지정하는 방법
+  *기호를 사용하여 표시
+
+
+&amp;lt;style&amp;gt;
+	*{
+		color:pink;
+	}
+&amp;lt;/style&amp;gt;
+&amp;lt;head&amp;gt;
+	&amp;lt;body&amp;gt;
+		&amp;lt;h1&amp;gt;전체 선택자&amp;lt;/h1&amp;gt;
+		&amp;lt;p&amp;gt;전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다&amp;lt;/p&amp;gt;
+	&amp;lt;/body&amp;gt;
+&amp;lt;/head&amp;gt;
+
+
+태그 선택자
+
+  HTML 태그명으로 선택자 지정
+  태그 선택자는 선택자에 지정된 태그명과 일치하는 모든 요소를 한 번에 선택
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>CSS]CSS Basic</title>
+    <link href="http://localhost:4000/posts/cssbasics/" rel="alternate" type="text/html" title="CSS]CSS Basic" />
+    <published>2023-07-31T15:10:00+09:00</published>
+  
+    <updated>2023-07-31T15:10:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/cssbasics/</id>
+    <content src="http://localhost:4000/posts/cssbasics/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Frontend" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      CSS 문법
+
+문법 형식
+
+  선택자와 선언부로 구분
+  선택자 : CSS 스타일을 적용할 HTML 태그(요소)를 선택하는 영역
+  선언부 : 선택자에서 선택한 태그에 적용할 스타일을 작성하는 영역(중괄호({}) 안에 작성)
+    
+      선언부에 작성하는 스타일은 반드시 속성과 값을 한 쌍으로 작성(값의 뒤에 세미콜론을 넣으면 여러 스타일을 연속해서 작성 가능)
+    
+  
+
+
+h1{
+	font-size:24px;
+	color:red;
+}
+
+
+주석
+
+  코드 설명
+  웹 브라우저 소스 보기에 노출되므로 중요 정보 작성 금지
+
+
+/*주석내용*/
+
+
+CSS 적용
+
+  작성한 CSS를 HTML 문서에 적용하는 대표적인 방법 3가지
+    
+      내부 스타일 시트
+      외부 스타일 시트
+ ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -89,13 +221,13 @@ blockquote 태그
   
   <entry>
     <title>HTML]HTML 기본</title>
-    <link href="http://localhost:4000/posts/htmldefault/" rel="alternate" type="text/html" title="HTML]HTML 기본" />
+    <link href="http://localhost:4000/posts/htmlbasics/" rel="alternate" type="text/html" title="HTML]HTML 기본" />
     <published>2023-07-14T15:10:00+09:00</published>
   
     <updated>2023-07-14T15:10:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/htmldefault/</id>
-    <content src="http://localhost:4000/posts/htmldefault/" />
+    <id>http://localhost:4000/posts/htmlbasics/</id>
+    <content src="http://localhost:4000/posts/htmlbasics/" />
     <author>
       <name>김예린</name>
     </author>

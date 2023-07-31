@@ -1331,7 +1331,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="7218 words">
+  title="7236 words">
   <em>40 min</em> read</span>
 
 
@@ -2007,16 +2007,16 @@
 </pre></td><td class="rouge-code"><pre><span class="p">-</span> 암묵적 방법
 <span class="nt">&lt;label&gt;</span>
 	아이디
-	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span> //상호작용 요소
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- 상호작용 요소 --&gt;</span>
 <span class="nt">&lt;/label&gt;</span>
 <span class="p">
 -</span> 명시적 방법 : for 속성 = id 속성
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"userpw"</span><span class="nt">&gt;</span>비밀번호<span class="nt">&lt;/label&gt;</span> //for "userpw"(for 속성값)
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"userpw"</span><span class="nt">&gt;</span> //id="userpw"(id 속성값)
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"userpw"</span><span class="nt">&gt;</span>비밀번호<span class="nt">&lt;/label&gt;</span> <span class="c">&lt;!-- for "userpw"(for 속성값) --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"userpw"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- id="userpw"(id 속성값) --&gt;</span>
 <span class="p">
 -</span> 암묵적 방법 + 명시적 방법
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span> // for 속성값
-	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"username"</span><span class="nt">&gt;</span>이름 //id 속성값 + 상호작용 요소
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- for 속성값 --&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"username"</span><span class="nt">&gt;</span>이름 <span class="c">&lt;!-- id 속성값 + 상호작용 요소 --&gt;</span>
 <span class="nt">&lt;/label&gt;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -2146,7 +2146,7 @@
 		<span class="nt">&lt;/p&gt;</span>
 		<span class="nt">&lt;p&gt;</span>
 			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"desc"</span><span class="nt">&gt;</span>내용
-				<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"desc"</span> <span class="na">name=</span><span class="s">"desc"</span><span class="nt">&gt;</span> //여러줄 입력 가능
+				<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"desc"</span> <span class="na">name=</span><span class="s">"desc"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- 여러줄 입력 가능 --&gt;</span>
 				<span class="nt">&lt;/textarea&gt;</span>
 			<span class="nt">&lt;/label&gt;</span>
 		<span class="nt">&lt;/p&gt;</span>
@@ -2666,12 +2666,12 @@
 		<span class="nt">&lt;td&gt;</span>3<span class="nt">&lt;/td&gt;</span>
 		<span class="nt">&lt;td&gt;</span>탄산수<span class="nt">&lt;/td&gt;</span>
 		<span class="nt">&lt;td&gt;</span>3개<span class="nt">&lt;/td&gt;</span>
-		// 3행 4열과 병합됨
+		<span class="c">&lt;!-- 3행 4열과 병합됨 --&gt;</span>
 	<span class="nt">&lt;/tr&gt;</span>
 	<span class="nt">&lt;tr&gt;</span>
 		<span class="nt">&lt;td&gt;</span>총 금액<span class="nt">&lt;/td&gt;</span>
-		<span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>6,500원<span class="nt">&lt;/td&gt;</span> // 열병합
-	// 5행 2열부터 열 3개 병합
+		<span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>6,500원<span class="nt">&lt;/td&gt;</span> <span class="c">&lt;!-- 열병합 --&gt;</span>
+	<span class="c">&lt;!-- 5행 2열부터 열 3개 병합 --&gt;</span>
 	<span class="nt">&lt;/tr&gt;</span>
 <span class="nt">&lt;/table&gt;</span>
 </pre></td></tr></tbody></table></code></div></div>
@@ -3196,9 +3196,9 @@
 4
 5
 </pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"파일 경로"</span> <span class="na">type=</span><span class="s">"audio/wav"</span><span class="nt">&gt;</span> // wav파일 우선
-	<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"파일 경로"</span> <span class="na">type=</span><span class="s">"audio/mp3"</span><span class="nt">&gt;</span> // mp3파일 차선
-	지원하지 않는 웹 브라우저입니다. // 위 포맷 모두 지원 안 될 경우 사용자에게 노출될 텍스트
+	<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"파일 경로"</span> <span class="na">type=</span><span class="s">"audio/wav"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- wav파일 우선 --&gt;</span>
+	<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"파일 경로"</span> <span class="na">type=</span><span class="s">"audio/mp3"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- mp3파일 차선 --&gt;</span>
+	지원하지 않는 웹 브라우저입니다. <span class="c">&lt;!-- 위 포맷 모두 지원 안 될 경우 사용자에게 노출될 텍스트 --&gt;</span>
 <span class="nt">&lt;/audio&gt;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -3411,8 +3411,10 @@
         <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
+3
 </pre></td><td class="rouge-code"><pre><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>Guten Morgen<span class="nt">&lt;/p&gt;</span> // 한국어(ko)로 기본 설정된 문서에서 독일어가 나올때 독일어 언어 코드(de)를 명시하면 웹 접근성을 올릴 수 있음
+<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>Guten Morgen<span class="nt">&lt;/p&gt;</span> 
+<span class="c">&lt;!-- 한국어(ko)로 기본 설정된 문서에서 독일어가 나올때 독일어 언어 코드(de)를 명시하면 웹 접근성을 올릴 수 있음 --&gt;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h3 id="data--속성"><span class="mr-2">data-* 속성</span><a href="#data--속성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
@@ -3424,7 +3426,7 @@
 <div class="language-md highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">data-name=</span><span class="s">"spiderMan"</span> <span class="na">data-hero=</span><span class="s">"true"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span> // data-name과 data-hero 속성 생성
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">data-name=</span><span class="s">"spiderMan"</span> <span class="na">data-hero=</span><span class="s">"true"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span> <span class="c">&lt;!-- data-name과 data-hero 속성 생성 --&gt;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 </div>
@@ -3550,6 +3552,46 @@
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -3565,24 +3607,6 @@
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3604,10 +3628,13 @@
       <a class="post-tag" href="/tags/frontend/">Frontend</a>
     
       
-      <a class="post-tag" href="/tags/html/">Html</a>
+      <a class="post-tag" href="/tags/web/">Web</a>
     
       
-      <a class="post-tag" href="/tags/web/">Web</a>
+      <a class="post-tag" href="/tags/css/">CSS</a>
+    
+      
+      <a class="post-tag" href="/tags/html/">Html</a>
     
 
     </div>
@@ -3666,6 +3693,32 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -3691,19 +3744,6 @@
 
 
 
-  
-    
-    
-  
-    
-    
-      
-      
-    
-  
-
-
-
 
 
   <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
@@ -3714,7 +3754,7 @@
       
       
       <div class="card">
-        <a href="/posts/htmldefault/">
+        <a href="/posts/htmlbasics/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -3760,6 +3800,106 @@ HTML 기본 구성 요소
         </a>
       </div>
     
+      
+      
+      <div class="card">
+        <a href="/posts/cssbasics/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+<em class="timeago small"
+    data-ts="1690783800"
+    
+    >
+  2023-07-31
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>CSS]CSS Basic</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                CSS 문법
+
+문법 형식
+
+  선택자와 선언부로 구분
+  선택자 : CSS 스타일을 적용할 HTML 태그(요소)를 선택하는 영역
+  선언부 : 선택자에서 선택한 태그에 적용할 스타일을 작성하는 영역(중괄호({}) 안에 작성)
+    
+      선언부에 작성하는 스타일은 반드시 속성과 값을 한 쌍으로 작성(값의 뒤에 세미콜론을 넣으면 여러 스타일을 연...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/cssselector/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+<em class="timeago small"
+    data-ts="1690783800"
+    
+    >
+  2023-07-31
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>CSS]CSS Selector</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                기본 선택자
+
+전체 선택자
+
+  HTML에서 사용할 수 있는 모든 요소를 한 번에 선택자로 지정하는 방법
+  *기호를 사용하여 표시
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&amp;lt;style&amp;gt;
+	*{
+		color:pink;
+	}
+&amp;lt;/style&amp;gt;
+&amp;lt;head&amp;gt;
+	&amp;lt;body&amp;gt;
+		&amp;lt;h1&amp;gt;전체 선택자&amp;l...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
 
@@ -3772,17 +3912,17 @@ HTML 기본 구성 요소
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/htmldefault/" class="btn btn-outline-primary"
+  <a href="/posts/htmlbasics/" class="btn btn-outline-primary"
     prompt="Older">
     <p>HTML]HTML 기본</p>
   </a>
   
 
   
-  <span class="btn btn-outline-primary disabled"
+  <a href="/posts/cssbasics/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>-</p>
-  </span>
+    <p>CSS]CSS Basic</p>
+  </a>
   
 
 </div>
@@ -3864,6 +4004,46 @@ HTML 기본 구성 요소
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -3879,24 +4059,6 @@ HTML 기본 구성 요소
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3918,10 +4080,13 @@ HTML 기본 구성 요소
       <a class="post-tag" href="/tags/frontend/">Frontend</a>
     
       
-      <a class="post-tag" href="/tags/html/">Html</a>
+      <a class="post-tag" href="/tags/web/">Web</a>
     
       
-      <a class="post-tag" href="/tags/web/">Web</a>
+      <a class="post-tag" href="/tags/css/">CSS</a>
+    
+      
+      <a class="post-tag" href="/tags/html/">Html</a>
     
 
     </div>
