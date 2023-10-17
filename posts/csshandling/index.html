@@ -546,6 +546,30 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -553,6 +577,41 @@
 
   
   
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
 
   
 
@@ -799,8 +858,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1624 words">
-  <em>9 min</em> read</span>
+  title="1874 words">
+  <em>10 min</em> read</span>
 
 
       <!-- page views -->
@@ -1190,6 +1249,47 @@
   </ul>
 </div></blockquote>
 
+<h2 id="벡터-이미지-파일-제어하기"><span class="mr-2"><strong>벡터 이미지 파일 제어하기</strong></span><a href="#벡터-이미지-파일-제어하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<h3 id="비트맵-이미지와-벡터-이미지-차이"><span class="mr-2"><strong>비트맵 이미지와 벡터 이미지 차이</strong></span><a href="#비트맵-이미지와-벡터-이미지-차이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<div class="table-wrapper"><table>
+	<tr>
+		<th>비트맵 이미지</th>
+		<th>벡터 이미지</th>
+	</tr>
+	<tr>
+		<td>픽셀을 조합한 이미지 출력</td>
+		<td>좌푯값을 연결하여 이미지 출력</td>
+	</tr>
+	<tr>
+		<td>확대하면 이미지 품질 저하</td>
+		<td>확대해도 이미지 품질 유지</td>
+	</tr>
+	<tr>
+		<td>파일 용량 큼</td>
+		<td>비트맵 이미지보다 파일 용량 작음</td>
+	</tr>
+</table></div>
+
+<h3 id="패스의-stroke-dasharray와-stroke-dashoffset-속성-이해하기"><span class="mr-2"><strong>패스의 stroke-dasharray와 stroke-dashoffset 속성 이해하기</strong></span><a href="#패스의-stroke-dasharray와-stroke-dashoffset-속성-이해하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3>
+
+<ul>
+  <li>패스의 stroke-dasharray : 선의 간격을 띄는 속성
+    <ul>
+      <li>값이 클수록 선의 간격이 벌어짐</li>
+      <li>빈 공간이 늘어날수록 실제 선의 길이가 같은 비율로 늘어남 (설정한 빈 공간과 실제 선이 그려지는 영역의 크기는 항상 같음)</li>
+    </ul>
+  </li>
+  <li>패스의 stroke-dashoffset : 가시 영역에 보이는 선의 시작 위치 지정 속성</li>
+</ul>
+
+<h2 id="화면-너비에-따라-웹-페이지-디자인-변경하기"><span class="mr-2"><strong>화면 너비에 따라 웹 페이지 디자인 변경하기</strong></span><a href="#화면-너비에-따라-웹-페이지-디자인-변경하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<ul>
+  <li>반응형 웹 : 화면 너비에 따라 웹 페이지 변화</li>
+</ul>
+
 </div>
 
 <div class="post-tail-wrapper text-muted">
@@ -1484,6 +1584,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -1707,7 +1820,7 @@ HTML, XHTML, XML 같은 문서의 스타일을 꾸밀 때 사용하는 스타일
       
       
       <div class="card">
-        <a href="/posts/cssbasics/">
+        <a href="/posts/createlayoutinaflex/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1715,13 +1828,13 @@ HTML, XHTML, XML 같은 문서의 스타일을 꾸밀 때 사용하는 스타일
 -->
 
 <em class="timeago small"
-    data-ts="1690783800"
+    data-ts="1697299200"
     
     >
-  2023-07-31
+  2023-10-15
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>CSS]CSS Basic</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>CSS_flex 방식으로 레이아웃 만들기</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1730,15 +1843,31 @@ HTML, XHTML, XML 같은 문서의 스타일을 꾸밀 때 사용하는 스타일
 
 
 
-                CSS 문법
+                부모 요소에 flex 적용하기
 
-문법 형식
 
-  선택자와 선언부로 구분
-  선택자 : CSS 스타일을 적용할 HTML 태그(요소)를 선택하는 영역
-  선언부 : 선택자에서 선택한 태그에 적용할 스타일을 작성하는 영역(중괄호({}) 안에 작성)
-    
-      선언부에 작성하는 스타일은 반드시 속성과 값을 한 쌍으로 작성(값의 뒤에 세미콜론을 넣으면 여러 스타일을 연...
+  flex
+  
+    레이아웃 배치 방법
+    남는 공간을 어떻게 차지할 것인지에 대한 성질이 핵심 개념
+    부모 요소와 자식 요소를 이용하여 구성
+    부모요소를 flex container, 자식 요소를 flex item
+  
+
+
+
+  
+
+
+
+	
+		속성명
+		속성값
+		설명
+	
+	
+		display
+		...
               </p>
             </div>
           </div>
@@ -1764,10 +1893,10 @@ HTML, XHTML, XML 같은 문서의 스타일을 꾸밀 때 사용하는 스타일
   
 
   
-  <span class="btn btn-outline-primary disabled"
+  <a href="/posts/createlayoutinaflex/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>-</p>
-  </span>
+    <p>CSS_flex 방식으로 레이아웃 만들기</p>
+  </a>
   
 
 </div>

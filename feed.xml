@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>기술로그</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-10T20:35:44+09:00</updated>
+  <updated>2023-10-17T21:20:41+09:00</updated>
   <author>
     <name>김예린</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,84 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CSS_flex 방식으로 레이아웃 만들기</title>
+    <link href="http://localhost:4000/posts/createlayoutinaflex/" rel="alternate" type="text/html" title="CSS_flex 방식으로 레이아웃 만들기" />
+    <published>2023-10-15T01:00:00+09:00</published>
+  
+    <updated>2023-10-15T01:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/createlayoutinaflex/</id>
+    <content src="http://localhost:4000/posts/createlayoutinaflex/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      부모 요소에 flex 적용하기
+
+
+  flex
+  
+    레이아웃 배치 방법
+    남는 공간을 어떻게 차지할 것인지에 대한 성질이 핵심 개념
+    부모 요소와 자식 요소를 이용하여 구성
+    부모요소를 flex container, 자식 요소를 flex item
+  
+
+
+
+  
+
+
+
+	
+		속성명
+		속성값
+		설명
+	
+	
+		display
+		flex
+		부모요소 블록 속성을 유지 및 자식 요소에 flex 환경 설정
+	
+	
+		inline-flex
+		부모요소 인라인 속성으로 변경 및 자식 요소에 flex 환경 설정
+	
+	
+		flex-direction
+		row
+		flex의 기본축을 가로로 지정
+	
+	
+		column
+		flex의 기본축을 세로로 지정
+	
+	
+		row-reverse
+		자...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -283,65 +361,6 @@ HTML에 CSS 연결하기
 
 	&amp;lt;body&amp;gt; &amp;lt;!--자식 태그--&amp;gt;
 	&amp;l...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>웹 페이지 제작 준비</title>
-    <link href="http://localhost:4000/posts/preparingwebpage/" rel="alternate" type="text/html" title="웹 페이지 제작 준비" />
-    <published>2023-09-17T15:10:00+09:00</published>
-  
-    <updated>2023-09-17T15:10:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/preparingwebpage/</id>
-    <content src="http://localhost:4000/posts/preparingwebpage/" />
-    <author>
-      <name>김예린</name>
-    </author>
-
-  
-    
-    <category term="Web" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      웹 페이지를 만들기 전에
-
-인터랙티브 UI/UX
-
-  UI
-    
-      사용자가 특정 콘텐츠를 이용할 때 만나는 접점, 즉 사용자 환경을 의미
-      사람들이 특정 콘텐츠를 이용할 때 만나게 되는 도구와 사용 환경
-        
-          컴퓨터 바탕화면의 아이콘과 툴바, 모바일 화면의 앱 아이콘 등
-웹페이지의 UI : 웹 페이지 상단의 로고와 메뉴, 그리고 배너와 이미지 섬네일 등
-        
-      
-    
-  
-  UX
-    
-      사람들이 특정 콘텐츠를 사용할 때 UI에서 느낄 수 있는 사용자 경험을 의미
-      편의성, 사용성을 고려한 디자인
-    
-  
-  인터랙티브 UI/UX
-    
-      사용자와 상호 작용하는 여러 모션과 동적인 콘텐츠를 사...
     </summary>
   
 

@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Roboto:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_div{
+    width : 100%;
+    background-color: #7a2c2c;
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #7a2c2c;
+}
+
+.search_icon{
+    padding-top: 4px;
+    padding-right: 1px;
+    float: right;
+}
+
+.search_text{
+    float: right;
+}
+
+.top_h1 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #363062;
+    padding: 40px;
+    box-sizing: initial;
+    text-align: center;
+}
+
+
+.div_search {
+    /* text-align: right; */
+    margin-top: 5px;
+    color: #363062;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+    border-width: 2px;
+    border-color: #363062;
+    padding: 2px;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.content1 {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.block1-1 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    background-color: lightblue;
+}
+
+.block1-2 {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: lightblue;
+}
+
+.block1-3 {
+    width: 100%;
+    height: 250px;
+    background-color: lightblue;
+}
+
+.content2 {
+    width: 100%;
+}
+
+.block2-1 {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px;
+    background-color: lightblue;
+}
+
+.block2-2 {
+    width: 100%;
+    height: 630px;
+    background-color: lightblue;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: lightblue;
+}
+
