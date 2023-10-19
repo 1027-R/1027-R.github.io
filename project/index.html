@@ -4,34 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Web-Practice</title>
-    <link rel="stylesheet" href="./css/default.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
 </head>
 
 <body>
     <header>
-        <h1 class="top_h1">웹 페이지 제작하기</h1>
+        <h1 class="top_h1">Web-Practice</h1>
     </header>
-
+    <div class="div_menubar">
+        <div class="home_icon">
+            <span class="material-icons">home</span>
+            <span>홈</span>
+        </div>
+        <div class="news_icon">
+            <span class="material-icons">newspaper</span>
+            <span>뉴스</span>
+        </div>   
+    </div>
     <div class="div_search">
         <div class="search_text">
             <input type="text">
         </div> 
-        
         <div class="search_icon">
-            <label class="material-icons">search</label>
+            <span class="material-icons">search</span>
         </div>
     </div>
     
     <div class="container">
         <div class="content1">
-            <div class="block1-1"></div>
-            <div class="block1-2"></div>
+            <div class="div_video">
+                <iframe 
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3Fv1e9mTORU?si=F_V03AkLtlmj9X8I"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+                </iframe>
+            </div>
+            <div class="block1-2">
+                <article></article>
+                <article></article>
+				<article></article>
+            </div>
             <div class="block1-3"></div>
         </div>
-        
+ 
         <div class="content2">
-            <div class="block2-1"></div>
+            <div class="div_login">
+                로그인
+                <div class="login_id">
+                    <input type="text">
+                </div>
+                <div class="login_password">
+                    <input type="password">
+                </div>
+            </div>
             <div class="block2-2"></div>
         </div>
     </div>
