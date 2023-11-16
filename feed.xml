@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>기술로그</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-19T14:37:23+09:00</updated>
+  <updated>2023-11-16T14:57:42+09:00</updated>
   <author>
     <name>김예린</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,190 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>springboot_MVC 패턴 이해와 실습</title>
+    <link href="http://localhost:4000/posts/mvcpatterns/" rel="alternate" type="text/html" title="springboot_MVC 패턴 이해와 실습" />
+    <published>2023-11-13T01:00:00+09:00</published>
+  
+    <updated>2023-11-13T01:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/mvcpatterns/</id>
+    <content src="http://localhost:4000/posts/mvcpatterns/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      2.1 뷰 템플릿과 MVC 패턴
+
+2.1.1 뷰 템플릿이란
+
+  뷰 템플릿
+    
+      화면을 담당하는 기술
+      웹 페이지를 하나의 틀로 만들고 여기에 변수를 삽입해 서로 다른 페이지로 보여줌
+      Mustache : 뷰 템플릿을 만드는 도구 (1장에서 도구 추가함)
+    
+  
+
+
+
+
+2.1.2 MVC 패턴
+
+  뷰 템플릿 (= 뷰)
+    
+      컨트롤러 : 클라이언트의 요청에 따라 서버에서 이를 처리하는 역할
+      모델 : 데이터를 관리하는 역할
+    
+  
+  MVC 패턴 : 보여주고 처리하고 관리하는 역할을 나누는 기법
+    
+      웹 페이지를 화면에 보여주고 = View
+      클라이언트의 요청을 받아 처리하고 = Controller
+      데...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>springboot_summary</title>
+    <link href="http://localhost:4000/posts/springbootsummary/" rel="alternate" type="text/html" title="springboot_summary" />
+    <published>2023-11-12T01:00:00+09:00</published>
+  
+    <updated>2023-11-12T01:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/springbootsummary/</id>
+    <content src="http://localhost:4000/posts/springbootsummary/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1.1 스프링 부트란
+
+  자바 웹 프로그램을 쉽고 빠르게 만들기 위한 도구
+
+
+1.2 스프링 부트 개발 환경 설정하기
+
+1.2.1 JDK 설치하기
+
+  자바 코드의 번역과 실행을 담당하는 자바 개발 도구
+  설치 URL : AdoptOpenJDK
+
+
+1.2.2 IDE 설치하기
+
+  개발 생산성을 높여 주는 도구
+  주로 이클립스, 인텔리제이 사용
+  설치 URL : 인텔리제이
+
+
+1.2.3 스프링 부트 프로젝트 만들기
+
+  프로젝트 만들기
+  src 디렉토리 : main과 test가 나옴
+    
+      main
+        
+          java : 자바 코드 저장
+          resources : 외부 파일 저장
+        
+      
+    
+  
+  java 디렉토리의 c...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>JavaScript_자바스크림트로 웹 페이지 제어하기</title>
+    <link href="http://localhost:4000/posts/controllingwebpageswithjavascript/" rel="alternate" type="text/html" title="JavaScript_자바스크림트로 웹 페이지 제어하기" />
+    <published>2023-10-15T01:00:00+09:00</published>
+  
+    <updated>2023-10-15T01:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/controllingwebpageswithjavascript/</id>
+    <content src="http://localhost:4000/posts/controllingwebpageswithjavascript/" />
+    <author>
+      <name>김예린</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      자바스크립트 시작하기
+
+HTML과 자바스크립트 연결하기
+
+&amp;lt;!-- HTML 파일 내부 연결 --&amp;gt;
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang="ko"&amp;gt;
+	&amp;lt;head&amp;gt;
+		&amp;lt;meta charset="UTF-8"&amp;gt;
+		&amp;lt;title&amp;gt;javascript&amp;lt;/title&amp;gt;
+		&amp;lt;link rel="css" href="./css.css"&amp;gt;
+	&amp;lt;/head&amp;gt;
+	&amp;lt;body&amp;gt;
+		&amp;lt;h1 id="title"&amp;gt;Java Script&amp;lt;/h1&amp;gt;
+&amp;lt;!-- &amp;lt;script&amp;gt; 태그 안의 코드는 아이디값이 #title인 요소를 title 변수에 입시로 저장하라는 의미 --&amp;gt;
+		&amp;lt;s...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -160,207 +344,6 @@
 	
 		translateZ
 		선택한 요소를 z축으로 입체감 있게 보이면...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CSS_basic grammar2</title>
-    <link href="http://localhost:4000/posts/cssbasicgrammar2/" rel="alternate" type="text/html" title="CSS_basic grammar2" />
-    <published>2023-10-08T01:00:00+09:00</published>
-  
-    <updated>2023-10-08T01:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/cssbasicgrammar2/</id>
-    <content src="http://localhost:4000/posts/cssbasicgrammar2/" />
-    <author>
-      <name>김예린</name>
-    </author>
-
-  
-    
-    <category term="Web" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      웹 페이지의 배경 꾸미기
-
-배경색 지정하기
-
-
-	
-		속성명
-		속성값
-		설명
-	
-	
-		background-color
-		영문명
-		배경색을 영어 색상명으로 지정
-	
-	
-		rgb(0, 0, 0)
-		배경색을 RGB 표기법으로 지정
-	
-	
-		#000000
-		배경색을 16진수 표기법으로 지정
-	
-
-
-
-  16진수 표기법
-색상값 입력시 같은 숫자나 알파벳 반복되면 3개로 줄여서 작성가능
-
-
-배경 이미지 삽입하기
-
-
-	
-		속성명
-		속성값
-		설명
-	
-	
-		background-image
-		url(이미지 경로)
-		배경 이미지 삽입
-	
-	
-		background-repeat
-		repeat, repeat-x, repeat-y, no-repeat
-		배경 이미지 반복
-	
-	
-		background-...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CSS_basic grammar1</title>
-    <link href="http://localhost:4000/posts/cssbasicgrammar1/" rel="alternate" type="text/html" title="CSS_basic grammar1" />
-    <published>2023-09-24T01:00:00+09:00</published>
-  
-    <updated>2023-09-24T01:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/cssbasicgrammar1/</id>
-    <content src="http://localhost:4000/posts/cssbasicgrammar1/" />
-    <author>
-      <name>김예린</name>
-    </author>
-
-  
-    
-    <category term="Web" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-  CSS란?
-HTML, XHTML, XML 같은 문서의 스타일을 꾸밀 때 사용하는 스타일 시트 언어
-글꼴이나 배경색, 너비와 높이, 위치 등을 지정하거나 웹 브라우저, 스크린 크기, 장치에 따라서 화면을 다르게 표시될 수 있도록 지정할 수 있음
-  HTML 언어 하나로 문서의 뼈대를 만들고 꾸밀 수 있으나 이럴 경우 HTML 문서를 수정할 때 모든 문서를 하나씩 수정해야는 번거로움 발생
-그래서 CSS는 문서의 내용과 표현을 분리하여 CSS 파일 하나만 수정하면 스타일에 해당하는 HTML 문서가 한번에 수정되는 장점을 가짐
-
-
-
-HTML에 CSS 연결하기
-
-
-
-스타일 시트 제작
-
-  html 파일에 작성하던 &amp;lt;style&amp;gt;태그 안 내용을 복사하여 파일 형식이 css인 파일에 붙여 넣어준다
- ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>HTML_basic grammar</title>
-    <link href="http://localhost:4000/posts/htmlbasicgrammar/" rel="alternate" type="text/html" title="HTML_basic grammar" />
-    <published>2023-09-18T01:00:00+09:00</published>
-  
-    <updated>2023-09-18T01:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/htmlbasicgrammar/</id>
-    <content src="http://localhost:4000/posts/htmlbasicgrammar/" />
-    <author>
-      <name>김예린</name>
-    </author>
-
-  
-    
-    <category term="Web" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      HTML 파일 둘러보기
-
-태그란
-
-  태그 : 브라우저가 웹 문서를 잘 이해할 수 있도록 콘텐츠를 목적에 맞게 분류한 규칙
-    
-      
-        와 &amp;lt;/닫는태그&amp;gt;로 구성
-
-
-      
-    
-  
-
-&amp;lt;tag&amp;gt;내용&amp;lt;/tag&amp;gt;
-
-
-부모 태그와 자식 태그
-
-  태그는 들여쓰기를 이용하여 중첩 관계로 만들 수 있음
-  부모태그 안에 들여쓰기를 한 뒤 여러 개의 자식 태그를 묶어서 표현 : Tab을 사용하여 들여쓰기함
-
-
-&amp;lt;html&amp;gt; &amp;lt;!--부모 태그--&amp;gt;
-	&amp;lt;head&amp;gt; &amp;lt;!--자식 태그--&amp;gt;
-	&amp;lt;/head&amp;gt; &amp;lt;!--자식 태그--&amp;gt;
-
-	&amp;lt;body&amp;gt; &amp;lt;!--자식 태그--&amp;gt;
-	&amp;l...
     </summary>
   
 
